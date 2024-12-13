@@ -6,7 +6,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 # Customization
 file_path = "C:/Users/Bryan Keating/OneDrive - Rutgers University/Senior Year/Senior Fall/Multiphysics Simulations/Homework Assignments/Final Project/Simulation Results Backup.xlsx"
 plot_type = input('Would you like separate plots (P) or a superimposed plot (I): ')
@@ -24,6 +23,7 @@ if plot_type == "I":
 	plt.ylabel(input("Y Label: "))
 	plt.legend()  # Automatically adds a legend for each line
 	plt.grid(True)
+	plt.show()
 
 elif plot_type == "P":
 	for col in data.columns[1:]:
@@ -33,9 +33,7 @@ elif plot_type == "P":
 		plt.xlabel(x_val)
 		plt.ylabel(input(f"Y Label for {col}: "))
 		plt.grid(True)
+	plt.show()
 
 else:
 	print('Not a valid plot type. Use "I" or "P"')
-
-# Displays the plots
-plt.show()
