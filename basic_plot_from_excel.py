@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Customization
-file_path = "C:/Users/Bryan Keating/OneDrive - Rutgers University/Senior Year/Senior Fall/Multiphysics Simulations/Homework Assignments/Final Project/Simulation Results Backup.xlsx"
+file_path = "path/file.xlsx"
 plot_type = input('Would you like separate plots (P) or a superimposed plot (I): ')
 
 # Plots the data
@@ -34,6 +34,5 @@ elif plot_type == "P":
 		plt.ylabel(input(f"Y Label for {col}: "))
 		plt.grid(True)
 	plt.show()
-
 else:
 	print('Not a valid plot type. Use "I" or "P"')
