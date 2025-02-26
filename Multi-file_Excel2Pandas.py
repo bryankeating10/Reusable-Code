@@ -1,18 +1,8 @@
-# Converts excel files to pandas dataframes
-
 import pandas as pd
 
-# Paths for files to be converted
-file_paths = ["path/file1.xlsx", "path/file2.xlsx"]
+file_paths = []
 data_frames = []
 
-# Converts the files to dataframes
-
-for file_path, df in file_paths, data_frames:
+for file_path in file_paths:
 	df = pd.read_excel(file_path)
-
-# Prints the first 2 columns of the dataframes
-for df in data_frames:
-	print(df.iloc[:,0:2])
-
-
+	data_frames.append(df)
