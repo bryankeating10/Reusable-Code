@@ -1,4 +1,4 @@
-# Basic Plot with Excel Data
+## Basic Plot with Excel Data
  * Input (Excel format):
    * One column of independent variables (x value)
    * N columns of dependent variables (y values)
