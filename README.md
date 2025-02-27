@@ -12,3 +12,11 @@
    * List of file paths for selected spreadsheets
  * Output
    * Returns a list of data frames with the files' data
+## Multi-sheet Excel to Pandas Data Frame
+ * Input
+   * Excel file with one or more sheets
+ * Output
+   * Returns a list of data frames with the sheets' data
+
+
+
